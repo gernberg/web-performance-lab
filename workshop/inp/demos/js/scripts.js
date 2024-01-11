@@ -122,18 +122,18 @@ window.addEventListener('load', () => {
     .getElementById('input_without_delay')
     ?.addEventListener('input', handleTextInput);
   document
+    .getElementById('input_with_50_delay')
+    ?.addEventListener('input', (event) => {
+      return handleTextInput(event, 50);
+    });
+  document
+    .getElementById('input_with_100_delay')
+    ?.addEventListener('input', (event) => {
+      return handleTextInput(event, 100);
+    });
+  document
     .getElementById('input_with_200_delay')
     ?.addEventListener('input', (event) => {
       return handleTextInput(event, 200);
-    });
-  document
-    .getElementById('input_with_500_delay')
-    ?.addEventListener('input', (event) => {
-      return handleTextInput(event, 500);
-    });
-  document
-    .getElementById('input_with_5000_delay')
-    ?.addEventListener('input', (event) => {
-      return handleTextInput(event, 5000);
     });
 });

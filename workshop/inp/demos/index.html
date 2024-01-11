@@ -35,9 +35,9 @@
       takes for the next paint event.
     </p>
     <button id="button_without_delay">without delay</button>
-    <button id="button_with_200_delay">with 200ms delay</button>
+    <button id="button_with_50_delay">with 50ms delay</button>
+    <button id="button_with_100_delay">with 100ms delay</button>
     <button id="button_with_500_delay">with 500ms delay</button>
-    <button id="button_with_5000_delay">with 5000ms delay</button>
     <div class="result" id="click_result"></div>
 
     <h2>Input Events</h2>
@@ -45,25 +45,29 @@
       Type something in the input field below to trigger an interaction and
       measure the time it takes for the next paint event.
     </p>
-    <label for="input_without_delay">without delay</label>
-    <input type="text" id="input_without_delay" value="" />
+    <label>without delay
+      <input type="text" id="input_without_delay" value="" />
+    </label>
 
-    <label for="input_with_200_delay">with 200ms delay</label>
-    <input type="text" id="input_with_200_delay" value="" />
+    <label>with 50ms delay
+      <input type="text" id="input_with_50_delay" value="" />
+    </label>
 
-    <label for="input_with_500_delay">with 500ms delay</label>
-    <input type="text" id="input_with_500_delay" value="" />
+    <label>with 100ms delay
+      <input type="text" id="input_with_100_delay" value="" />
+    </label>
 
-    <label for="input_with_5000_delay">with 5000ms delay</label>
-    <input type="text" id="input_with_5000_delay" value="" />
+    <label>with 200ms delay
+      <input type="text" id="input_with_200_delay" value="" />
+    </label>
     <div class="result" id="text_input_result"></div>
 
     <footer>
       <p>
-        Source:
-        <a
+      Source:
+      <a
           href="https://github.com/gtech-professional-services/web-performance-lab"
-        >
+          >
           Web Performance Lab</a
         >
       </p>
